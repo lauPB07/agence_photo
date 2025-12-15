@@ -1,6 +1,6 @@
-package entity;
+package com.example.gestionpojets.entity;
 
-public class Tag {
+public class Role {
     private int id;
     private String nom;
 
@@ -19,9 +19,9 @@ public class Tag {
     public void setNom(String nom) {
         this.nom = nom;
     }
-
-    public Tag(int id, String nom) {
+    public Role(int id, String nom) {
         this.id = id;
         this.nom = nom;
     }
+
 }

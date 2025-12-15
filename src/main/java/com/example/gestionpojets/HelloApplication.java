@@ -1,5 +1,6 @@
 package com.example.gestionpojets;
 
+import com.example.gestionpojets.entity.User;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -8,6 +9,15 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
+    public static User getUser() {
+        return user;
+    }
+
+    public static void setUser(User user) {
+        HelloApplication.user = user;
+    }
+
+    private static User user;
     private static Stage maStage;
 
     @Override

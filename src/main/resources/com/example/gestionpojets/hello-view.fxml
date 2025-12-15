@@ -1,16 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.gestionpojets.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="780.0" style="-fx-background-color: #f8f2e6;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionpojets.HelloController">
+   <right>
+      <VBox prefWidth="332.0" style="-fx-background-radius: 30; -fx-border-radius: 30;" styleClass="vbox_background_right" stylesheets="@loginPage.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="178.0" prefWidth="332.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="112.55859375">
+                     <font>
+                        <Font name="Impact" size="51.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="332.0">
+               <children>
+                  <TextField fx:id="email" prefHeight="34.0" prefWidth="295.0" promptText="email" style="-fx-background-radius: 50; -fx-border-radius: 50;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="180.0" prefHeight="61.0" prefWidth="332.0">
+               <children>
+                  <PasswordField fx:id="mpd" prefHeight="33.0" prefWidth="294.0" promptText="password" style="-fx-background-radius: 50; -fx-border-radius: 50;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonLogin" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#connexion" prefHeight="38.0" prefWidth="166.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #c97efd;" text="Login" textAlignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="305.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="message" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefWidth="449.0" styleClass="vbox_background_center" stylesheets="@loginPage.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="62.0" style="-fx-background-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" text="AP." textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox prefHeight="366.0" prefWidth="448.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="136.0" prefWidth="448.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Space">
+                           <font>
+                              <Font name="Impact" size="50.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="For">
+                           <font>
+                              <Font name="Impact" size="51.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="120.0" prefWidth="448.0">
+                     <children>
+                        <Text fill="#faf6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Your">
+                           <font>
+                              <Font name="Impact" size="51.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company">
+                           <font>
+                              <Font name="Impact" size="51.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

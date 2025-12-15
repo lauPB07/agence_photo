@@ -1,4 +1,4 @@
-package sql;
+package com.example.gestionpojets.sql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

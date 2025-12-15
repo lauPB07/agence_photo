@@ -1,4 +1,4 @@
-package entity;
+package com.example.gestionpojets.entity;
 
 public class User {
     private int id;
@@ -73,6 +73,10 @@ public class User {
         this.mdp = mdp;
         this.tel = tel;
         this.role = role;
+    }
+
+    public User(){
+
     }
 
 

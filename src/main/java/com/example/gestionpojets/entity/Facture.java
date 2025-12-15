@@ -1,14 +1,14 @@
-package entity;
+package com.example.gestionpojets.entity;
 
 import java.util.Date;
 
-public class Devis {
+public class Facture {
     private int id;
     private int projetId;
     private String numero;
     private double montant;
-    private Date dateCreation;
-    private int statusId;
+    private Date dateEmission;
+    private int paye;
 
     public int getId() {
         return id;
@@ -42,31 +42,29 @@ public class Devis {
         this.montant = montant;
     }
 
-    public Date getDateCreation() {
-        return dateCreation;
+    public Date getDateEmission() {
+        return dateEmission;
     }
 
-    public void setDateCreation(Date dateCreation) {
-        this.dateCreation = dateCreation;
+    public void setDateEmission(Date dateEmission) {
+        this.dateEmission = dateEmission;
     }
 
-    public int getStatusId() {
-        return statusId;
+    public int getPaye() {
+        return paye;
     }
 
-    public void setStatusId(int statusId) {
-        this.statusId = statusId;
+    public void setPaye(int paye) {
+        this.paye = paye;
     }
 
-    public Devis(int id, int projetId, String numero, double montant, Date dateCreation, int statusId) {
+    public Facture(int id, int projetId, String numero, double montant, Date dateEmission, int paye) {
         this.id = id;
         this.projetId = projetId;
         this.numero = numero;
         this.montant = montant;
-        this.dateCreation = dateCreation;
-        this.statusId = statusId;
+        this.dateEmission = dateEmission;
+        this.paye = paye;
     }
-
-
 
 }

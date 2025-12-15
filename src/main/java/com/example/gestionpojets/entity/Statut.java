@@ -1,4 +1,4 @@
-package entity;
+package com.example.gestionpojets.entity;
 
 public class Statut {
     private int id;
