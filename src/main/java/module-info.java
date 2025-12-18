@@ -17,4 +17,7 @@ module com.example.gestionpojets {
 
     exports com.example.gestionpojets.pagesAdmin;
     opens com.example.gestionpojets.pagesAdmin to javafx.fxml;
+
+    exports com.example.gestionpojets.repository;
+    opens com.example.gestionpojets.repository to javafx.fxml;
 }
