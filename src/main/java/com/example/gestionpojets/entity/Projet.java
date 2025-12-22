@@ -10,6 +10,7 @@ public class Projet {
     private Date dateDebut;
     private Date dateFin;
     private int statutId;
+    private int chefProjetId;
 
     public int getId() {
         return id;
@@ -67,7 +68,16 @@ public class Projet {
         this.statutId = statutId;
     }
 
-    public Projet(int id, String titre, String nomClient, String description, Date dateDebut, Date dateFin, int statutId) {
+    public int getChefProjetId() {
+        return chefProjetId;
+    }
+
+    public void setChefProjetId(int chefProjetId) {
+        this.chefProjetId = chefProjetId;
+    }
+
+
+    public Projet(int id, String titre, String nomClient, String description, Date dateDebut, Date dateFin, int statutId, int chefProjetId) {
         this.id = id;
         this.titre = titre;
         this.nomClient = nomClient;
@@ -75,6 +85,7 @@ public class Projet {
         this.dateDebut = dateDebut;
         this.dateFin = dateFin;
         this.statutId = statutId;
+        this.chefProjetId = chefProjetId;
     }
 
 

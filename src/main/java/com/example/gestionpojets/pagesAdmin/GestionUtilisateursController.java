@@ -13,7 +13,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -22,7 +21,7 @@ import java.sql.ResultSet;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
-public class GestionUtilisateurs implements Initializable {
+public class GestionUtilisateursController implements Initializable {
     @FXML
     private AnchorPane mainPage;
     @FXML

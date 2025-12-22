@@ -20,4 +20,7 @@ module com.example.gestionpojets {
 
     exports com.example.gestionpojets.repository;
     opens com.example.gestionpojets.repository to javafx.fxml;
+
+    exports com.example.gestionpojets.pageChefProjet;
+    opens com.example.gestionpojets.pageChefProjet to javafx.fxml;
 }
